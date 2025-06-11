@@ -1,0 +1,211 @@
+/* Basic reset for margin and padding */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navigation bar */
+nav {
+  background-color: #2e8b57; /* Green color for sustainability */
+  padding: 10px 0;
+}
+
+/* Style the navigation links */
+nav ul {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Arrange links in a row */
+  justify-content: center; /* Center the links */
+}
+
+nav ul li {
+  margin: 0 15px; /* Space between links */
+}
+
+nav ul li a {
+  color: #fff; /* White text */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Hero section styles */
+.hero {
+  text-align: center; /* Center all content */
+  padding: 40px 20px;
+  background-color: #f0f8ff; /* Light background */
+}
+
+/* Headline style */
+.hero h1 {
+  font-size: 2em;
+  color: #2e8b57;
+  margin-bottom: 15px;
+}
+
+/* Paragraph style */
+.hero p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Call to action button style */
+.cta-button {
+  display: inline-block;
+  background-color: #2e8b57;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  margin-bottom: 25px;
+}
+
+/* Hero image style */
+.hero img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 25px auto 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Destinations section styles */
+.destinations {
+  padding: 30px 10px;
+  background-color: #e6f2e6; /* Light green background */
+  text-align: center;
+}
+
+/* Section headline */
+.destinations h2 {
+  color: #2e8b57;
+  margin-bottom: 25px;
+  font-size: 1.5em;
+}
+
+/* Container for destination cards */
+.destination-cards {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically by default */
+  gap: 20px; /* Space between cards */
+  align-items: center;
+}
+
+/* Individual card styles */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 18px 14px;
+  max-width: 320px;
+  width: 100%;
+  text-align: left;
+}
+
+/* Card image */
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+/* Card title */
+.card h3 {
+  margin: 0 0 8px 0;
+  color: #2e8b57;
+  font-size: 1.15em;
+}
+
+/* Card description */
+.card p {
+  margin: 0;
+  color: #444;
+  font-size: 1em;
+}
+
+/* Responsive: show cards side by side on larger screens */
+@media (min-width: 700px) {
+  .destination-cards {
+    flex-direction: row; /* Arrange cards horizontally */
+    justify-content: center;
+  }
+  .card {
+    margin: 0 10px;
+  }
+}
+
+/* Responsive styles for screens 600px and wider */
+@media (min-width: 600px) {
+  /* Increase spacing in hero and destinations sections */
+  .hero {
+    padding: 50px 40px;
+  }
+  .destinations {
+    padding: 40px 30px;
+  }
+  .destination-cards {
+    gap: 30px; /* More space between cards */
+  }
+  .card {
+    max-width: 350px; /* Slightly wider cards */
+    padding: 22px 18px;
+  }
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column; /* Stack links vertically */
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  .hero {
+    padding: 20px 5px;
+  }
+  .hero h1 {
+    font-size: 1.3em;
+  }
+}
+
+/* Call-to-Action section styles */
+.cta-section {
+  background-color: #2e8b57; /* Green background */
+  color: #fff;
+  text-align: center;
+  padding: 35px 15px;
+  margin-top: 30px;
+}
+
+/* CTA section message */
+.cta-section p {
+  font-size: 1.3em;
+  margin-bottom: 18px;
+}
+
+/* Main CTA button style */
+.cta-main-button {
+  display: inline-block;
+  background-color: #fff;
+  color: #2e8b57;
+  padding: 14px 32px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Button hover effect */
+.cta-main-button:hover {
+  background-color: #e6f2e6;
+  color: #206040;
+}
